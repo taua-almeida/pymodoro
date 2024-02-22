@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pymodoro"
+version = "0.1.0"
+description = "A pomodoro cli for working. Why not?"
+authors = ["Tauã Gomes de Almeida <tauan96@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+rich = "^13.7.0"
+
+[tool.poetry.scripts]
+pymodoro = "pymodoro.command:pomodoro"
+
+[tool.poetry.dev-dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
